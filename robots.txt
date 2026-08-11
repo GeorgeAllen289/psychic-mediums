@@ -7,3 +7,4 @@ Disallow: /xmlrpc.php
 Disallow: /go/
 
 Sitemap: https://psychic-mediums.net/sitemap.xml
+Sitemap: https://sv.psychic-mediums.net/sitemap.xml
