@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /xmlrpc.php
+Disallow: /go/
+
+Sitemap: https://psychic-mediums.net/sitemap.xml
+Sitemap: https://sv.psychic-mediums.net/sitemap.xml

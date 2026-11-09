@@ -1,0 +1,100 @@
+/* Профілі медіумів, індекс, ростер і смуги CTA. Використовує токени теми (--color-*). */
+.rp-main{display:block}
+.rp-wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+.rp-crumbs{max-width:var(--wrap);margin:0 auto;padding:22px 32px 0;font-size:.86rem;color:var(--color-neutral-600)}
+.rp-crumbs a{color:var(--color-neutral-700)}
+.rp-crumbs a:hover{color:var(--color-accent-700)}
+.rp-crumbs span{margin:0 8px;opacity:.6}
+.rp-eyebrow{display:inline-flex;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--color-accent-2-700);margin:0 0 12px;font-weight:700}
+
+/* Hero профілю */
+.rp-hero{padding:36px 0 64px}
+.rp-hero-grid{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:56px;align-items:center;max-width:var(--wrap);margin:0 auto;padding:0 32px}
+.rp-portrait{position:relative}
+.rp-portrait::before{content:"";position:absolute;inset:-22px auto auto -22px;width:110px;height:110px;border-radius:50%;background:var(--color-accent-2-200);z-index:0}
+.rp-avatar{position:relative;z-index:1;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:150px 150px 28px 28px;box-shadow:var(--shadow-md)}
+.rp-hero h1{margin:0 0 6px;font-size:clamp(2.2rem,4.6vw,3.2rem)}
+.rp-role{font-family:var(--font-heading);color:var(--color-accent-700);font-size:1.15rem;margin:0 0 14px}
+.rp-tagline{font-size:1.08rem;color:var(--color-neutral-700);max-width:52ch;margin:0 0 24px}
+.rp-actions{display:flex;gap:12px;flex-wrap:wrap}
+.rp-chips{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 0;padding:0;list-style:none}
+.rp-chips li{background:var(--color-accent-2-100);color:var(--color-accent-2-800);font-size:.78rem;padding:5px 13px;border-radius:999px}
+
+/* Секції */
+.rp-section{padding:60px 0}
+.rp-section.alt{background:var(--color-accent-2-100)}
+.rp-section h2{margin:0 0 22px}
+.rp-section h3{margin:0 0 8px}
+.rp-two{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start}
+.rp-two.flip{grid-template-columns:1fr 1.15fr}
+.rp-bio p{font-size:1.06rem;line-height:1.78;color:var(--color-neutral-800)}
+.rp-figure img{width:100%;height:auto;border-radius:var(--radius-lg);box-shadow:var(--shadow-md)}
+.rp-figure figcaption{font-size:.84rem;color:var(--color-neutral-600);margin-top:10px}
+.rp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.rp-card{background:var(--color-neutral-100);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-sm)}
+.rp-card h3{font-size:1.25rem}
+.rp-card p{margin:0;font-size:.95rem;color:var(--color-neutral-700)}
+.rp-list{margin:0;padding:0;list-style:none}
+.rp-list li{padding:11px 0 11px 30px;position:relative;border-bottom:1px solid var(--color-divider);font-size:1rem}
+.rp-list li::before{content:"";position:absolute;left:4px;top:19px;width:10px;height:10px;border-radius:50%;background:var(--color-accent-2)}
+.rp-q li{font-style:italic}
+.rp-steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px;padding:0;margin:0;list-style:none}
+.rp-steps li{counter-increment:s}
+.rp-steps li::before{content:counter(s);display:flex;width:44px;height:44px;border-radius:50%;background:var(--color-accent-2-100);color:var(--color-accent-2-900);font-family:var(--font-heading);align-items:center;justify-content:center;margin-bottom:12px}
+.rp-steps h3{font-size:1.2rem;color:var(--color-neutral-100)}
+.rp-steps p{margin:0;font-size:.92rem;opacity:.85}
+.rp-dark{background:var(--color-accent-2-800);color:var(--color-neutral-100);border-radius:calc(var(--radius-lg)*1.5);padding:48px}
+.rp-dark h2{color:var(--color-neutral-100)}
+.rp-note{font-size:.86rem;color:var(--color-neutral-600);margin-top:18px}
+
+/* FAQ */
+.rp-faq details{border-radius:var(--radius-md);background:var(--color-neutral-100);margin-bottom:10px;box-shadow:var(--shadow-sm)}
+.rp-faq summary{cursor:pointer;padding:16px 20px;font-family:var(--font-heading);font-size:1.05rem;list-style:none}
+.rp-faq summary::-webkit-details-marker{display:none}
+.rp-faq summary::after{content:"+";float:right;font-size:1.4rem;line-height:1;color:var(--color-accent-700)}
+.rp-faq details[open] summary::after{content:"\2212"}
+.rp-faq details p{padding:0 20px 18px;margin:0;color:var(--color-neutral-800)}
+
+/* Смуги: remembrance + CTA */
+.rp-ai-band{background:var(--color-accent-200);margin:0;padding:56px 32px;text-align:center}
+.rp-ai-band .inner{max-width:680px;margin:0 auto}
+.rp-ai-band h2{margin:0 0 12px}
+.rp-ai-band p{color:var(--color-neutral-800);margin:0 0 22px}
+.rp-cta{padding:64px 32px;text-align:center}
+.rp-cta h2{margin-bottom:10px}
+.rp-cta p{color:var(--color-neutral-700);max-width:48ch;margin:0 auto 22px}
+
+/* Інші медіуми */
+.rp-others{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.rp-other{display:flex;gap:14px;align-items:center;background:var(--color-neutral-100);padding:12px;border-radius:var(--radius-md);box-shadow:var(--shadow-sm);color:var(--color-text)}
+.rp-other:hover{box-shadow:var(--shadow-md);color:var(--color-text)}
+.rp-other img{width:60px;height:60px;border-radius:50%;object-fit:cover;flex:none}
+.rp-other strong{display:block;font-family:var(--font-heading);font-weight:400}
+.rp-other span{font-size:.8rem;color:var(--color-neutral-600)}
+
+/* Індекс і ростер */
+.rp-index-hero{max-width:var(--wrap);margin:0 auto;padding:36px 32px 12px}
+.rp-index-hero h1{max-width:18ch}
+.rp-index-hero p{max-width:60ch;color:var(--color-neutral-700);font-size:1.06rem}
+.md-roster{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px}
+.md-card{background:var(--color-neutral-100);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column}
+.md-card img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.md-card .md-body{padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.md-card h3{margin:0;font-size:1.35rem}
+.md-card h3 a{color:var(--color-text)}
+.md-role{font-size:.82rem;color:var(--color-accent-700);font-weight:600}
+.md-card p{font-size:.88rem;color:var(--color-neutral-700);margin:0;flex:1}
+.md-link{font-family:var(--font-heading);font-size:.95rem;margin-top:6px}
+.md-wrap{max-width:var(--wrap);margin:0 auto;padding:12px 32px 48px}
+.org-section .md-roster{margin-top:4px}
+
+@media(max-width:860px){
+  .rp-hero-grid,.rp-two,.rp-two.flip{grid-template-columns:1fr;gap:32px}
+  .rp-portrait{max-width:260px;margin:0 auto}
+  .rp-dark{padding:32px 22px}
+}
+@media(max-width:560px){
+  .rp-wrap,.rp-crumbs,.rp-hero-grid,.rp-index-hero,.md-wrap{padding-left:16px;padding-right:16px}
+  .rp-section{padding:44px 0}
+  .rp-ai-band,.rp-cta{padding:44px 16px}
+}
